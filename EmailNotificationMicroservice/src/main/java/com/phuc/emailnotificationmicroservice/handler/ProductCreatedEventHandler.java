@@ -2,6 +2,7 @@ package com.phuc.emailnotificationmicroservice.handler;
 
 
 import com.phuc.core.ProductCreatedEvent;
+import com.phuc.emailnotificationmicroservice.error.NotRetryableException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaHandler;
@@ -16,6 +17,7 @@ public class ProductCreatedEventHandler {
 
     @KafkaHandler
     public void handle(ProductCreatedEvent productCreateEvent) {
+        if (true) throw new NotRetryableException("An error took place. No need to consume this message again!");
         LOGGER.info("Received a new event: " + productCreateEvent.getTitle());
     }
 }

@@ -87,3 +87,11 @@ bin\windows\kafka-console-consumer.bat --topic topic1 --from-beginning --bootstr
 ```
 bin\windows\kafka-configs.sh --bootstrap-server localhost:9092 --alter --entity-type topics --entity-name topic1 --add-config min.insync.replicas=2
 ```
+
+# Dead Letter Topic
+
+```
+bin\windows\kafka-console-consumer.bat --topic topic1.DLT --from-beginning --bootstrap-server localhost:9092 --property print.key=true --property print.value=true
+```
+
+- Giải mã base 64: trả về lỗi được mã hoá base64, muốn đọc thì lên web online base-64 decoder

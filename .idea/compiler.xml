@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="EmailNotificationMicroservice" />
         <module name="core" />
+        <module name="MockService" />
         <module name="ProductService" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="EmailNotificationMicroservice" options="-parameters" />
+      <module name="MockService" options="-parameters" />
       <module name="ProductService" options="-parameters" />
       <module name="core" options="-parameters" />
     </option>

@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/productservice/pom.xml" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/MockService/pom.xml" />
+        <option value="$PROJECT_DIR$/Kafka-transactions/WithdrawalService/pom.xml" />
       </list>
     </option>
   </component>

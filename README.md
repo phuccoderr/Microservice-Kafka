@@ -95,3 +95,11 @@ bin\windows\kafka-console-consumer.bat --topic topic1.DLT --from-beginning --boo
 ```
 
 - Giải mã base 64: trả về lỗi được mã hoá base64, muốn đọc thì lên web online base-64 decoder
+
+# Docker
+
+- Lưu ý: docker-compose phải ở trong tệp kafka
+
+```
+docker-compose -f docker-compose.yml --env-file enviroment.env up
+```
